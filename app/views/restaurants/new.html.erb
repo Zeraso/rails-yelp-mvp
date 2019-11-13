@@ -1,0 +1,15 @@
+<div class="d-flex m-5 flex-column">
+  <h1>Create your restaurant</h1>
+  <div class="d-flex flex-column">
+  <%= simple_form_for(@restaurant) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :phone_number %>
+  <%= f.input :category %>
+  <%= f.submit class: "btn btn-primary"%>
+<% end %>
+  </div>
+  <%= link_to 'Back to List', restaurants_path %>
+</div>
+
+
